@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+header {
+    height: 30vh;
+    width: auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .heading {
+        text-align: center;
+    }
+
+    h1 {
+        color: black;
+        font-size: 50px;
+        margin: 10px 0px;
+        padding: 25px 0px;
+        text-decoration: underline;
+    }
+
+    h2 {
+        color: black;
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding: 20px 20px;
+    margin: 20px 500px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.calculator__display {
+    display: grid;
+    grid-column: span 4;
+    width: auto;
+    height: 75px;
+    background-color: #9DB5B2;
+    opacity: 0.75;
+    border: 1px solid white;
+    font-size: 50px;
+    color: white;
+    justify-content: right;
+    align-items: center;
+    padding: 0px 20px;
+    font-family: Dosis;
+}
+
+button { 
+    height: auto;
+    background-color: #DAF0EE;
+    opacity: 0.75;
+    border: 1px solid white;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family: Dosis;
+} 
+
+button:hover{
+    opacity: 1;
+}
+
+.operator-button {
+    background-color: #BCD3D0;
+    color: white;
+    opacity: 0.75;
+}
+
+.equals {
+    background-color: #BCD3D0;
+    color: white;
+    opacity: 0.75;
+}
+
+#clear-button {
+    background-color: #BCD3D0; 
+    color: white;
+    opacity: 0.75;
+}
+
+#clear-button:hover {
+    opacity: 1;
+}
+
