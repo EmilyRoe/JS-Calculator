@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 
+body {
+    background-color: #f4f3ee;
+}
+
 header {
-    height: 30vh;
+    height: 10vh;
     width: auto;
-    padding: 0 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,28 +16,36 @@ header {
         text-align: center;
     }
 
+    .subHeading {
+        text-align: center; 
+        color: #8a817c;
+        margin: 10px 0;
+        font-family: Dosis;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
     h1 {
-        color: black;
+        color: #8a817c;
         font-size: 50px;
         margin: 10px 0px;
         padding: 25px 0px;
         text-decoration: underline;
+        font-family: Dosis;
     }
-
-    h2 {
-        color: black;
-        font-size: 30px;
-        margin: 10px 0;
-    }
-
-
+.calculatorContainer {
+    display: grid;
+    justify-content: center;
+}
 .calculator {
     display: grid;
     justify-content: center;
     width: auto;
     height: auto;
     padding: 20px 20px;
-    margin: 20px 500px;
+    margin: 0px 0px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -92,3 +103,14 @@ button:hover{
     opacity: 1;
 }
 
+@media screen and (min-width: 400px) {
+    .calculator {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .calculator {
+        width: 500px;
+    }
+}
